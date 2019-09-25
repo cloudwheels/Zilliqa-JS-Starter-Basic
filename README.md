@@ -32,7 +32,7 @@ It is possible to use npm but this may cause errors.
 
 >**Ideally, you should [Create a new Nucleus Wallet](https://dev-wallet.zilliqa.com/generate) (a Zilliqa devnet wallet)**.
 >
->You should 'fund' the wallet by sending testnet ZIL tokens from the [ZIL faucet].(https://dev-wallet.zilliqa.com/faucet)
+>You should 'fund' the wallet by sending testnet ZIL tokens from the [ZIL faucet](https://dev-wallet.zilliqa.com/faucet)
 >
 >You should then replace the value of `const privateKey` in the file `index.js` with the one from this wallet.
 >
