@@ -58,4 +58,4 @@ The code should work with the existing private key but this cannot be guaranteed
 
 Each network transaction may take some minutes to complete and verify.
 
-You can view transactions on the Zilliqa explorer [Viewblock](https://viewblock.io) (remember to select 'testnet' transactions'
+You can view transactions on the Zilliqa explorer [Viewblock](https://viewblock.io) (remember to select 'testnet' transactions)
