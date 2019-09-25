@@ -22,12 +22,12 @@ This repo is not an official Zilliqa product.
 
 ## System requirements and prerequisites
 - It is assumed you are a developer with some knowledge of Node.js and ideally the basics of blockchain technology
-- You are using a linux / Ubuntu / Debian based system
-- You have Node.js installed. This code is only tested with Node version 10.x and known to cause errors with v 12.x.
-You can check your node version using:
-
-`$ node -v`
-- You have the latest version yarn package manager installed [installation options](prerequisites). It is possible to use npm but this may cause errors.
+- You are using a **linux** / Ubuntu / Debian based system
+- You have Node.js installed. This code is only tested with **Node.js version 10.x** and known to cause errors with v 12.x.
+(You can check your installed node version using `$ node -v`)
+- You have the latest version **yarn** package manager installed [installation options](prerequisites).
+(You can check your installed yarn version using `$ yarn -v`) 
+It is possible to use npm but this may cause errors.
 
 
 >**Ideally, you should [Create a new Nucleus Wallet](https://dev-wallet.zilliqa.com/generate) (a Zilliqa devnet wallet)**.
