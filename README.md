@@ -25,7 +25,7 @@ This repo is not an official Zilliqa product.
 - You are using a **linux** / Ubuntu / Debian based system
 - You have Node.js installed. This code is only tested with **Node.js version 10.x** and known to cause errors with v 12.x.
 (You can check your installed node version using `$ node -v`)
-- You have the latest version **yarn** package manager installed [installation options](prerequisites).
+- You have the latest version **yarn** package manager installed [(yarn installation options)](https://yarnpkg.com/en/docs/install#debian-stable).
 (You can check your installed yarn version using `$ yarn -v`) 
 It is possible to use npm but this may cause errors.
 
