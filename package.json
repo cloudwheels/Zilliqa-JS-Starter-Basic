@@ -1,0 +1,13 @@
+{
+  "name": "Zilliqa-Node-Starter-Basic",
+  "version": "0.1.0",
+  "description": "A basic starter for working with the Zilliqa JS SDK at https://github.com/Zilliqa/Zilliqa-JavaScript-Library",
+  "main": "index.js",
+  "repository": "https://github.com/cloudwheels/Zilliqa-Node-Starter-Basic",
+  "author": "@cloudwheels (Nigel Wheeler)",
+  "license": "MIT",
+  "dependencies": {
+    "@zilliqa-js/zilliqa": "^0.8.0-alpha.0",
+    "tslib": "^1.10.0"
+  }
+}
