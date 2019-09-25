@@ -33,11 +33,14 @@ You can 'fund' the wallet by sending testnet tokens from the [ZIL faucet](https:
 You should then replace the private key value in the file 'index.js' with the one from this wallet.
 The code should work with the existing private key but this cannot be guaranteed.
 
+-----
+
 ## Quickstart
 
 - **Clone this repo and change the project directory**
 
 `$ git clone https://github.com/cloudwheels/Zilliqa-Node-Starter-Basic.git`
+
 `$ cd Zilliqa-Node-Starter-Basic`
 
 - **Ideally replace the private key value in `index.js` with your own**
