@@ -25,7 +25,8 @@ This repo is not an official Zilliqa product.
 - You are using a linux / Ubuntu / Debian based system
 - You have Node.js installed. This code is only tested with Node version 10.x and known to cause errors with v 12.x.
 You can check your node version using:
-'$ node -v'
+
+`$ node -v`
 - You have the latest version yarn package manager installed [installation options](prerequisites). It is possible to use npm but this may cause errors.
 
 >**Ideally, you should [Create a new Nucleus Wallet](https://dev-wallet.zilliqa.com/generate) (a Zilliqa devnet wallet)**.
