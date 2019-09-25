@@ -29,10 +29,14 @@ You can check your node version using:
 `$ node -v`
 - You have the latest version yarn package manager installed [installation options](prerequisites). It is possible to use npm but this may cause errors.
 
+
 >**Ideally, you should [Create a new Nucleus Wallet](https://dev-wallet.zilliqa.com/generate) (a Zilliqa devnet wallet)**.
-You can 'fund' the wallet by sending testnet tokens from the [ZIL faucet](https://dev-wallet.zilliqa.com/faucet)
-You should then replace the private key value in the file 'index.js' with the one from this wallet.
-The code should work with the existing private key but this cannot be guaranteed.
+>
+>You should 'fund' the wallet by sending testnet ZIL tokens from the [ZIL faucet].(https://dev-wallet.zilliqa.com/faucet)
+>
+>You should then replace the value of `const privateKey` in the file `index.js` with the one from this wallet.
+>
+>The code should work with the existing private key but this cannot be guaranteed.
 
 -----
 
@@ -44,7 +48,7 @@ The code should work with the existing private key but this cannot be guaranteed
 
 `$ cd Zilliqa-Node-Starter-Basic`
 
-- **Ideally replace the private key value in `index.js` with your own**
+- **Ideally replace the value of `const privateKey` in the file `index.js` with your own**
 
 - **Install dependencies with yarn**
 
