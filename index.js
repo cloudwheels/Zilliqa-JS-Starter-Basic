@@ -13,7 +13,7 @@ const msgVersion = 1; // current msgVersion
 const VERSION = bytes.pack(chainId, msgVersion);
 
 // Populate the wallet with an account
-const privateKey= '3375F915F3F9AE35E6B301B7670F53AD1A5BE15D8221EC7FD5E503F21D3450C8';
+const privateKey= 'be00deabc5f09ad8ccf56cb754ec6d011e55e48ed6a88493f89951889b3cec4d';
 
 zilliqa.wallet.addByPrivateKey(privateKey);
 
@@ -39,6 +39,7 @@ async function testBlockchain() {
     console.log(`Is the gas price sufficient? ${isGasSufficient}`);
 
     // Send a transaction to the network
+    console.log("Sending a payment transaction to the network...");
     const tx = await zilliqa.blockchain.createTransaction(
       zilliqa.transactions.new({
         version: VERSION,
@@ -53,6 +54,7 @@ async function testBlockchain() {
     console.log(tx.receipt);
 
     // Deploy a contract
+    console.log(`Deploying a new contract....`);
     const code = `scilla_version 0
 
     (* HelloWorld contract *)
@@ -106,7 +108,7 @@ async function testBlockchain() {
       {
         vname: "owner",
         type: "ByStr20",
-        value: `0x${address}`
+        value: `${address}` //Modified to fix issue at https://github.com/Zilliqa/Zilliqa-JavaScript-Library/issues/164
       }
     ];
 
@@ -128,13 +130,19 @@ async function testBlockchain() {
     // Get the deployed contract address
     console.log("The contract address is:");
     console.log(hello.address);
+    //Following line added to fix issue https://github.com/Zilliqa/Zilliqa-JavaScript-Library/issues/165
+    const deployedContract = zilliqa.contracts.at(hello.address);
+    
+    //Create a new timebased message and call setHello
+    const newMsg = 'Hello, the time is ' + Date.now();
+    console.log('Calling setHello transition with msg: ' + newMsg);
     const callTx = await hello.call(
       "setHello",
       [
         {
           vname: "msg",
           type: "String",
-          value: "Hello World!"
+          value: newMsg
         }
       ],
       {
@@ -150,7 +158,8 @@ async function testBlockchain() {
     console.log(JSON.stringify(callTx.receipt, null, 4));
 
     //Get the contract state
-    const state = await hello.getState();
+    console.log("Getting contract state...");
+    const state = await deployedContract.getState(); //Modified to fix issue https://github.com/Zilliqa/Zilliqa-JavaScript-Library/issues/165
     console.log("The state of the contract is:");
     console.log(JSON.stringify(state, null, 4));
   } catch (err) {
