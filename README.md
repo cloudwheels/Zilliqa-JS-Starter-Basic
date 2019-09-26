@@ -1,4 +1,4 @@
-# Zilliqa-Node-Starter-Basic
+# Zilliqa-JS-Starter-Basic
 A basic starter for working with the Zilliqa JS SDK at https://github.com/Zilliqa/Zilliqa-JavaScript-Library
 
 ## Overview
@@ -44,7 +44,7 @@ It is possible to use npm but this may cause errors.
 
 - **Clone this repo and change the project directory**
 
-`$ git clone https://github.com/cloudwheels/Zilliqa-Node-Starter-Basic.git`
+`$ git clone https://github.com/cloudwheels/Zilliqa-JS-Starter-Basic.git`
 
 `$ cd Zilliqa-Node-Starter-Basic`
 
