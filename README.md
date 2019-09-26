@@ -46,7 +46,7 @@ It is possible to use npm but this may cause errors.
 
 `$ git clone https://github.com/cloudwheels/Zilliqa-JS-Starter-Basic.git`
 
-`$ cd Zilliqa-Node-Starter-Basic`
+`$ cd Zilliqa-JS-Starter-Basic`
 
 - **Ideally replace the value of `const privateKey` in the file `index.js` with your own**
 
